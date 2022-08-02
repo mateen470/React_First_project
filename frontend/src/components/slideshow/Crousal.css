@@ -1,0 +1,49 @@
+.crousal_main_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.crousal_main {
+  margin-top: 2rem;
+  width: 1000px;
+  height: 500px;
+}
+
+.biggest_div_no3 {
+  z-index: 5;
+  position: absolute;
+  background-color: black;
+  height: 340px;
+  width: 580px;
+  margin-left: 13rem;
+  margin-top: 3rem;
+  border-radius: 1.5rem;
+}
+.main_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 340px;
+  width: 580px;
+  border-radius: 1.5rem;
+}
+.big_div_no2 {
+  z-index: 4;
+  position: absolute;
+  background-color: black;
+  height: 290px;
+  border-radius: 1.5rem;
+  width: 690px;
+  margin-top: 4.55rem;
+  margin-left: 9.5rem;
+}
+.medium_div_no1 {
+  z-index: 3;
+  position: absolute;
+  background-color: black;
+  height: 250px;
+  border-radius: 1.5rem;
+  width: 775px;
+  margin-left: 7rem;
+  margin-top: 5.75rem;
+}
