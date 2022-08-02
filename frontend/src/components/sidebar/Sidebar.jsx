@@ -30,7 +30,7 @@ const Sidebar = () => {
 
   return (
     <div className="container">
-      <div style={{ width: open ? "295px" : "60px" }} className="SideBar">
+      <div style={{ width: open ? "270px" : "65px" }} className="SideBar">
         <img
           src={menuIcon}
           alt="#"
@@ -59,7 +59,7 @@ const Sidebar = () => {
         </div>
         <div
           className="functions_of_sidebar"
-          style={{ marginTop: open ? "0px" : "-55px" }}
+          style={{ marginTop: open ? "0px" : "-40px" }}
         >
           {menuItems.map((item, index) => (
             <div className="side_bar_elments_list">
@@ -76,7 +76,7 @@ const Sidebar = () => {
                     src={item.icon}
                     alt="#"
                     style={{
-                      marginLeft: open ? "8px" : "-37px",
+                      marginLeft: open ? "8px" : "-22px",
                       height: open ? "20px" : "30px",
                       width: open ? "20px" : "30px",
                       transition: open ? "0.5s ease-in" : "none",

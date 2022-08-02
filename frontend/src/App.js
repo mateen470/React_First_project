@@ -8,13 +8,14 @@ import LiveEventsPage from "./pages/LiveEvents/LiveEvents";
 import MyBetsPage from "./pages/MyBets/MyBets";
 import SportsListPage from "./pages/SportsList/SportsList";
 import StartSoonPage from "./pages/StartingSoon/StartSoon";
-
+import Demo from "./components/demoslide";
 function App() {
   return (
     <div className="App">
       <Sidebar />
       <Routes>
-        <Route path="/slide" element={<Crousal />} />
+        <Route path="/demo" element={<Demo />} />
+        <Route path="/" element={<Crousal />} />
         <Route exact path="/dashboard" element={<DashboardPage />} />
         <Route exact path="/bets" element={<MyBetsPage />} />
         <Route exact path="/events" element={<LiveEventsPage />} />
