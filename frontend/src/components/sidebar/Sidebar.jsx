@@ -8,8 +8,11 @@ import myBetsIcon from "./assets/user_group.png";
 import liveEvents from "./assets/live-events.png";
 import calendarIcon from "./assets/calendar.png";
 import sportListrIcon from "./assets/settings.png";
-const Sidebar = () => {
+const Sidebar = (props) => {
   const [user, setUser] = useState({
+    // name:props.name,
+    // status:props.status,
+    // picture:props.picture,
     name: "User One",
     status: "new user",
     picture: userProfilePicture,
@@ -80,6 +83,7 @@ const Sidebar = () => {
                       height: open ? "20px" : "30px",
                       width: open ? "20px" : "30px",
                       transition: open ? "0.5s ease-in" : "none",
+                      marginTop: open ? "0" : "-15px",
                     }}
                     className="icons_sideBar"
                   />

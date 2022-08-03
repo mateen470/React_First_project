@@ -1,0 +1,301 @@
+.mainContainer {
+  box-sizing: border-box;
+  position: absolute;
+  width: 1440px;
+  height: 1024px;
+  left: 0px;
+  top: -3px;
+  background: #000000;
+  border: 1px solid #000000;
+}
+
+.logo {
+  position: absolute;
+  width: 64px;
+  height: 65px;
+  left: 104px;
+  top: 4px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  z-index: 0;
+}
+
+.signin,
+.reg {
+  width: 69px;
+  height: 24px;
+
+  /* Desktop/Mono Paragraph Medium */
+
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  display: flex;
+  align-items: center;
+  /* Text/Icon/Secondary */
+  color: #c8c7d8;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  float: right;
+  text-decoration: none;
+}
+
+.navItems {
+  margin-top: 50px;
+  padding-right: 220px;
+}
+
+.wallet {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 10px;
+
+  position: absolute;
+  width: 147px;
+  height: 48px;
+  left: 1243px;
+  top: 40px;
+
+  /* Accent/Brand */
+
+  background: #6966ff;
+  border-radius: 7.29px;
+}
+
+.walletText {
+  width: 115px;
+  height: 24px;
+  padding-top: 15px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.011em;
+
+  /* Text/Icon/Primary */
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.menuBar {
+  position: absolute;
+  width: 1356px;
+  height: 76px;
+  left: 84px;
+  top: 123px;
+
+  background: rgba(17, 19, 28, 0.8);
+  border-radius: 22px;
+}
+
+.item1 {
+  position: absolute;
+  width: 160px;
+  height: 40px;
+  left: 312px;
+  right: 12px;
+  top: 12px;
+  bottom: 12px;
+  background: #2e2e48;
+  border-radius: 8.0938px;
+}
+
+.item2,
+.element1 {
+  position: absolute;
+  width: 160px;
+  height: 40px;
+  left: 452px;
+  right: 12px;
+  top: 12px;
+  bottom: 12px;
+  background: #1a1a29;
+  border-radius: 8.0938px;
+}
+
+.item3,
+.element2 {
+  position: absolute;
+  width: 160px;
+  height: 40px;
+  left: 592px;
+  right: 12px;
+  top: 12px;
+  bottom: 12px;
+  background: #2e2e48;
+  border-radius: 8.0938px;
+}
+.item4,
+.element3 {
+  position: absolute;
+  width: 160px;
+  height: 40px;
+  left: 732px;
+  right: 12px;
+  top: 12px;
+  bottom: 12px;
+  background: #2e2e48;
+  border-radius: 8.0938px;
+}
+.item5 {
+  position: absolute;
+  width: 160px;
+  height: 40px;
+  left: 872px;
+  right: 12px;
+  top: 12px;
+  bottom: 12px;
+  background: #2e2e48;
+
+  border-radius: 8.0938px;
+}
+
+.gameLogo {
+  position: absolute;
+  width: 51px;
+  height: 44px;
+  left: 1249px;
+  right: 12px;
+  top: 12px;
+  bottom: 12px;
+  background: #2e2e48;
+
+  border-radius: 8.0938px;
+}
+
+.gameLogo img {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  left: 12px;
+  top: 10px;
+}
+.item1 p,
+.item2 p,
+.item3 p,
+.item4 p,
+.item5 p,
+.element1 p,
+.element2 p,
+.element3 p {
+  position: absolute;
+  height: 15px;
+  left: 16px;
+  right: 16px;
+  top: 10px;
+  bottom: 15px;
+
+  /* Button Text */
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  /* or 114% */
+
+  text-align: center;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+
+  /* White */
+
+  color: #ffffff;
+}
+
+.menuBar2 {
+  position: absolute;
+  width: 1338px;
+  height: 66px;
+  left: 91px;
+  top: 202px;
+
+  background: #000000;
+  border-radius: 26px;
+}
+
+.allBets {
+  position: absolute;
+  width: 1356px;
+  height: 76px;
+  left: 82px;
+  top: 260px;
+}
+.table {
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+th,
+td {
+  width: 47px;
+  height: 16px;
+
+  padding-right: 330px;
+  /* Button Text */
+
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height, or 114% */
+  text-align: center;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+thead tr {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.first {
+  border-top-left-radius: 22px;
+  border-bottom-left-radius: 22px;
+}
+.last {
+  border-top-right-radius: 22px;
+  border-bottom-right-radius: 22px;
+}
+
+tbody tr:nth-child(odd) td {
+  --bs-table-striped-bg: black !important;
+  border-style: hidden;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+thead tr:nth-child(1n) th,
+tbody tr:nth-child(even) td {
+  background: rgba(17, 19, 28, 0.8);
+  border-style: hidden;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
