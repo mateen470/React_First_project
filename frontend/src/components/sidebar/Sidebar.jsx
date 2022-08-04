@@ -65,8 +65,8 @@ const Sidebar = (props) => {
           style={{ marginTop: open ? "0px" : "-40px" }}
         >
           {menuItems.map((item, index) => (
-            <div className="side_bar_elments_list">
-              <NavLink to={item.path} key={index} className="NavLink_SideBar">
+            <div className="side_bar_elments_list"  key={index}>
+              <NavLink to={item.path} className="NavLink_SideBar">
                 <div
                   className="element"
                   style={{

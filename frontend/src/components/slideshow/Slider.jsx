@@ -17,6 +17,8 @@ const rightArrowStyles = {
   right: "32px",
   zIndex: 1,
   cursor: "pointer",
+  fontSize: "60px",
+  color: "black",
 };
 
 const leftArrowStyles = {
@@ -24,8 +26,8 @@ const leftArrowStyles = {
   top: "106%",
   transform: "translate(0, -50%)",
   left: "32px",
-  fontSize: "45px",
-  color: "#fff",
+  fontSize: "60px",
+  color: "black",
   zIndex: 1,
   cursor: "pointer",
 };
@@ -38,6 +40,8 @@ const sliderStyles = {
 const dotsContainerStyles = {
   display: "flex",
   justifyContent: "center",
+  color: "black",
+  fontSize: "20px",
 };
 
 const dotStyle = {
@@ -70,14 +74,14 @@ const ImageSlider = ({ slides }) => {
     <div style={sliderStyles}>
       <div>
         <div onClick={goToPrevious} style={leftArrowStyles}>
-          <img src={leftArrow} alt="#" />
+          🠔
         </div>
         <div onClick={goToNext} style={rightArrowStyles}>
-          <img src={rightArrow} alt="#" />
+          🠖
         </div>
       </div>
       <div style={slideStylesWidthBackground}></div>
-      <div style={dotsContainerStyles}> ● ● ○ ○</div>
+      <div style={dotsContainerStyles}> ● ● </div>
     </div>
   );
 };

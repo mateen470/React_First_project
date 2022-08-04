@@ -6,7 +6,7 @@ import logo from "./assets/logo.png";
 import soccerBall from "./assets/soccerBall.png";
 
 import SlideShowComponent from "../components/slideshow/Crousal";
-import LobbySection from "../sections/Lobby/Lobby";
+import LobbySection from "../sections/Lobby/MainLobby";
 import MyBets from "../sections/MyBets/MyBets";
 import LiveEvents from "../sections/LiveEvents/LiveEvents";
 import StartSoon from "../sections/StartingSoon/StartSoon";
@@ -44,19 +44,54 @@ const Main_page = () => {
         <div className="navbar_elements_main">
           <ul className="navbar_ul">
             <li className="navbar_list_elements">
-              <NavLink to={""}>LOBBY</NavLink>
+              <NavLink
+                className={(navData) =>
+                  navData.isActive ? "active-style" : "none"
+                }
+                to={""}
+              >
+                LOBBY
+              </NavLink>
             </li>
             <li className="navbar_list_elements">
-              <NavLink to={""}>MY BETS</NavLink>
+              <NavLink
+                className={(navData) =>
+                  navData.isActive ? "active-style" : "none"
+                }
+                to={""}
+              >
+                MY BETS
+              </NavLink>
             </li>
             <li className="navbar_list_elements">
-              <NavLink to={""}>LIVE EVENTS</NavLink>
+              <NavLink
+                className={(navData) =>
+                  navData.isActive ? "active-style" : "none"
+                }
+                to={""}
+              >
+                LIVE EVENTS
+              </NavLink>
             </li>
             <li className="navbar_list_elements">
-              <NavLink to={""}>FAVOURITES</NavLink>
+              <NavLink
+                className={(navData) =>
+                  navData.isActive ? "active-style" : "none"
+                }
+                to={""}
+              >
+                FAVOURITES
+              </NavLink>
             </li>
             <li className="navbar_list_elements">
-              <NavLink to={""}>STARTING SOON</NavLink>
+              <NavLink
+                className={(navData) =>
+                  navData.isActive ? "active-style" : "none"
+                }
+                to={""}
+              >
+                STARTING SOON
+              </NavLink>
             </li>
           </ul>
           <div className="select_sports_btn">
@@ -69,18 +104,7 @@ const Main_page = () => {
       {/* NAVBAR-ENDS */}
       {/* LOBBY SECTION-STARTS */}
       <div className="lobbyBar_main">
-      <div className="name_league">
-        {/* {props.name}etc. */}
-        <span className="league_name">Egyptian-League</span>
-      </div>
-      <hr className="hr_lobbyBar"/>
-      <div className="lobby_bar">
-      <LobbySection />
-      </div>
-        
-        <div>
-
-        </div>
+        <LobbySection />
       </div>
       {/* LOBBY SECTION-ENDS */}
     </div>
